@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.an.example3.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Name :"
+        android:id="@+id/tvN"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="96dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="AccNo :"
+        android:id="@+id/tvAcc"
+        android:layout_below="@+id/tvN"
+        android:layout_alignLeft="@+id/tvN"
+        android:layout_alignStart="@+id/tvN"
+        android:layout_marginTop="81dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Balance :"
+        android:id="@+id/tvBal"
+        android:layout_below="@+id/tvAcc"
+        android:layout_alignLeft="@+id/tvAcc"
+        android:layout_alignStart="@+id/tvAcc"
+        android:layout_marginTop="79dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show"
+        android:id="@+id/btnN"
+        android:layout_alignBottom="@+id/tvN"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="66dp"
+        android:layout_marginEnd="66dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show"
+        android:id="@+id/btnAcc"
+        android:layout_alignBottom="@+id/tvAcc"
+        android:layout_alignLeft="@+id/btnN"
+        android:layout_alignStart="@+id/btnN" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show"
+        android:id="@+id/btnBal"
+        android:layout_alignBottom="@+id/tvBal"
+        android:layout_alignRight="@+id/btnAcc"
+        android:layout_alignEnd="@+id/btnAcc" />
+</RelativeLayout>
